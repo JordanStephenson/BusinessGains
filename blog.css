@@ -1,0 +1,47 @@
+
+.hero {
+    height: 10vh;
+    background: linear-gradient(135deg, rgba(51, 101, 138, 1) 0%, rgba(11, 85, 99, 1) 100%), url("images/highfive.jpg") center no-repeat;
+}
+.hero::before {
+    display: none;
+}
+.blog-container {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.img {
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.exclusive-group {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .container{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    
+}
+footer {
+    padding: 2rem 0;
+    background-color: #d7d4ed;
+    text-align: center;
+    color: rgba(0, 0, 0,.7);
+}

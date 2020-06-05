@@ -1,0 +1,296 @@
+<!--
+<?php
+
+if ($_POST["submit"]) {
+
+      
+      
+     if (!$_POST['name']) {
+
+       $error="<br />Please enter your name";
+
+     }
+      
+     if (!$_POST['email']) {
+
+       $error.="<br />Please enter your email address";
+
+     }
+     
+      
+     if (!$_POST['message']) {
+
+       $error.="<br />Please enter a message";
+
+     }
+      
+     if ($_POST['email']!="" AND !filter_var($_POST['email'],
+FILTER_VALIDATE_EMAIL)) {
+      
+     $error.="<br />Please enter a valid email address";
+
+     }
+     
+      
+     if ($error) {
+
+ $result='<div class="alert alert-danger"><strong>There were error(s)
+in your form:</strong>'.$error.'</div>';
+
+     } else {
+
+
+      /* THE EMAIL WHERE YOU WANT TO RECIEVE THE CONTACT MESSAGES */
+ if (mail("info@youremailaddress.com", "Message from Your Website Name",
+
+
+ 
+"Name: ".$_POST['name']."
+Phone: ".$_POST['phone']." 
+Message: ".$_POST['message'])) {
+$result='<div class="alert alert-success"> <strong> Thank
+you!</strong> We\'ll get back to you shortly.</div>';
+} else {
+$result='<div class="alert alert-danger">Sorry, there was
+an error sending your message. Please try again later.</div>';
+}
+}
+}
+?>
+
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Business Gains - Web Design for Fitness Trainers</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="get-a-quote-form.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a href="index.html"><img src="images/logo (1).png" alt=""></a>
+                </div>
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Growth Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <section class="hero">
+        <div class="container">
+            <div class="main-message">
+                <h3>Awesome web design with</h3>
+                <h1>Gains in mind</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quis? Quos hic sequi atque repellendus ea ullam deserunt nulla assumenda commodi? Minus facere totam, veritatis libero ad voluptate optio corporis!
+                </p>
+                <div class="cta">
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience-outdoors">
+        <div class="container">
+            <div class="title-heading animate-left">
+                <h3>I help fitness trainers</h3>
+                <h2>Get more customers</h2>
+                <p>
+                    Workout while  take care of your online presense! 
+                </p>
+            </div>
+            <div class="activities-grid animate-right">
+                <!--Grid item #1-->
+                <div class="activities-grid-item star-gazing">
+                    <h1>Web Design</h1>
+                    <p>
+                        Eye catching design and development, with the growth of your business in mind
+                    </p>
+                </div>
+                   <!--Grid item #2-->
+                   <div class="activities-grid-item hiking">
+
+                    <h1>SEO</h1>
+                    <p>
+                        Advanced SEO strategy helping you to rank higher on google
+                    </p>
+                </div>
+                   <!--Grid item #3-->
+                   <div class="activities-grid-item camping">
+                    <h1>Social Media</h1>
+                    <p>
+                        Social Media management and online marketing
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonial">
+                <div class="testimonial-text-box">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, incidunt error ducimus vitae accusantium fugit hic et necessitatibus. 
+                    </p>
+                    <i class="icon ion-md-quote"></i>
+                </div>
+                <div class="testimonial-customer">
+                    <img src="images/profile-pic.jpg" alt="">
+                    <h1>Martin G.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="begin-adventure">
+        <div class="container">
+            <div class="title-heading">
+   
+                <h1>My work</h1>
+                <p>
+                    Here are some of my recent projects
+                </p>
+            </div>
+            <div class="portfolio-container">
+                <div class="work-img">
+                    <a href="https://jordanstephenson.github.io/PowerHouse-Fitness/index.html"><img id="power-house" src="images/fitness-18.jpg" alt="portfolio-website"></a>
+                </div>
+                <div class="work-img">
+                    <a href="https://jordanstephenson.github.io/DD-website/"><img id="DD" src="images/DD-black-white 1.png" alt="portfolio-website"></a>
+                </div>
+                <div class="work-img">
+                    <a href="https://jordanstephenson.github.io/fitness/"><img id="fitness" src="images/logo.png" alt="portfolio-website"></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="request-quote"> <br>
+
+        <h4>Request a Quote</h4>
+      
+          <div class="container">
+      
+            <div class="row">
+      
+              <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"> <br />
+      
+      
+              <form method="post"><br />
+            
+      
+                  <div align="center" class="form-group center-block">
+                    
+                         <input type="text" name="name" class="form-control" placeholder="Name" value="<?php echo $_POST['name']; ?>" />
+                         
+                   
+                 </div>
+      
+                  <div align="center" class="form-group center-block">
+                     
+                            <input type="email" name="email" class="form-control" placeholder="Email" value="<?php echo $_POST['email']; ?>" />
+                            
+                      
+                  </div>
+      
+      
+      
+                  <div align="center" class="form-group center-block">
+      
+                      <textarea class="form-control" name="message"><?php echo $_POST['message']; ?> </textarea><br /> <br />
+      
+                  </div>
+                          
+                          <br>
+      
+                          <p align="center" ><input type="submit" name="submit" class="btn btn-success btn-lg submit" value="Request a Quote" /> </p><br />
+      
+                </form> <!--- /form-->
+      
+            </div><!--- /.col-md-->
+          
+          </div><!--- /.row-->
+      
+      
+              <div class="row">
+      
+                <div class="col-md-6 col-md-offset-3"> <br />
+                  <p class="havewebsite" align="center">If you already have an existing website and <br />you'd like to see how I can help you, <a href="https://youragencydomain.com/growth-tips.html">click here</a></p>
+                  
+                  <br>
+      
+                </div> <!--- /.col-md--> 
+      
+              </div>  <!--- /.row-->  
+          
+          </div><!--- /.container--><br><br><br>
+       
+      </div><!--- /.request-quote-->
+      <div class="social-links" align="center">
+
+        <a href="https://www.linkedin.com/"><svg  width="35" height="35" viewBox="0 0 24 24">
+        <path fill="#454867" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+
+  </div> <!--end social-link-->
+
+
+
+<div class="exclusive-group" align="center">
+
+  <p>Join my Exclusive Facebook Group for Personal Trainers - <a href="#"><span>Click here to apply</span></a></p>
+
+</div><!--end exclusive-group-->
+
+<div id="footer" align="center">
+    <div class="container">
+
+        <a href="blog.html">GROWTH TIPS</a>
+        <a href="about.html">ABOUT ME</a>
+        <a href="contact.html">CONTACT</a>
+
+    </div>
+</div><!--end of footer-->
+    </main>
+        
+    <footer>
+        <p>&copy; 2019 Jordan Stephenson. All rights reserved</p>
+    </footer>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
