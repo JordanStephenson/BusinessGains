@@ -12,6 +12,10 @@
     margin: auto;
 }
 
+.nav-brand {
+    width: 2rem;
+}
+
 .img {
     width: 80%;
     margin-bottom: 2rem;
@@ -31,7 +35,7 @@
 }
 
 #footer .container{
-    width: 40%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -44,4 +48,11 @@ footer {
     background-color: #d7d4ed;
     text-align: center;
     color: rgba(0, 0, 0,.7);
+}
+
+@media only screen and (min-width: 700px) {
+    #footer .container{
+        width: 60%;
+        
+    }
 }
