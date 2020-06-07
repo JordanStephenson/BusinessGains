@@ -290,6 +290,7 @@ nav {
     color: #eb648c;
     opacity: .5;
     z-index: -1;
+    display: none;
 }
 
 .testimonial-text-box p{
@@ -361,7 +362,7 @@ nav {
 }
 
 #footer .container{
-    width: 40%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -369,6 +370,7 @@ nav {
     padding-bottom: 50px;
     
 }
+
 footer {
     padding: 2rem 0;
     background-color: #d7d4ed;
@@ -392,6 +394,17 @@ footer {
         height: 9.4rem;
         background: url("images/wave-medium-reversed.png");
         background-size: cover;
+    }
+    .testimonial-text-box i{
+        position: absolute;
+        top: -15rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 8rem;
+        color: #eb648c;
+        opacity: .5;
+        z-index: -1;
+        display: none;
     }
 }
 
@@ -451,6 +464,11 @@ footer {
 
     .title-heading h1 {
         font-size: 2.5rem;
+    }
+
+    #footer .container{
+        width: 60%;
+        
     }
 
 }
